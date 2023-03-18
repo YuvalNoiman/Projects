@@ -1,0 +1,1 @@
+flex:	bison.y flex.l;	bison -d bison.y	flex  -o flex.l.c flex.lex	PATH=$PATH:</usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin>	export PATH	gcc -o flex flex.l.c bison.tab.c -lfl -lm

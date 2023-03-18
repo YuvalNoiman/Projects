@@ -1,0 +1,11 @@
+select * from maintenance.PersonalInfo;
+select * from maintenance.Locational;
+
+#orders the personal info by its ID
+select * from maintenance.PersonalInfo order by ID;
+
+#searches for the people whose ids are above 555555555
+select * from maintenance.PersonalInfo where ID>555555555;
+
+#searches for the pladces where category is FIRE
+select * from maintenance.Locational where Category='FIRE';

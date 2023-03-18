@@ -1,0 +1,11 @@
+total 60
+-rwxrwxr-x 1 student student 17136 Mar  6 21:40 main
+-rw-rw-r-- 1 student student    49 Mar  4 17:01 r.sh
+-rw-rw-r-- 1 student student    50 Mar  4 17:01 rs.sh
+-rwxrwxr-x 1 student student 17136 Mar  6 22:04 time
+-rw-rw-r-- 1 student student  1483 Mar  6 21:40 time_pipe.c
+-rw-rw-r-- 1 student student     0 Mar  6 22:05 time_pipe_output.txt
+-rw-rw-r-- 1 student student  1849 Mar  6 21:30 time_shm.c
+-rw-rw-r-- 1 student student   510 Mar  6 22:04 time_shm_output.txt
+
+Elapsed time: 0.002721 seconds

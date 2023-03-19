@@ -28,7 +28,7 @@ CREATE TABLE RequestInfo (
   FOREIGN KEY (Pno) REFERENCES PersonalInfo(Personalno)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO PersonalInfo VALUES (1,'John', 'Jones', 123456789, '123-456-7899','johnjones@gmail.com');
-INSERT INTO RequestInfo VALUES (1,1,'UFC','There is a broken wire in the fight ring.','Eletrical',TRUE);
+INSERT INTO RequestInfo VALUES (1,1,'UFC','There is a broken wire in the fight ring.','Electrical',TRUE);
 INSERT INTO PersonalInfo VALUES (2,'Tom', 'Brady', 444444444, '919-349-1000','tombrady@yahoo.com');
 INSERT INTO RequestInfo VALUES (2,2,'Bucaneer Stadium','There is a broken sprinkler on the field.','Water/Irrigation',False);
 INSERT INTO PersonalInfo (FirstName, LastName,ID) VALUES ('Chris', 'Hemsworth', 838383838);

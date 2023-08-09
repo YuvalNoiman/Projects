@@ -1,0 +1,17 @@
+html {
+  height: display;
+  width: display;
+  margin: auto;
+}
+
+body {
+  color: orange;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+form{
+  color: blue;
+  height: display;
+  width: display;
+}

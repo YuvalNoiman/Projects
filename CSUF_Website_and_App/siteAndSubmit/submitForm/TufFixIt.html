@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <title> TufFixIt Submission form </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href = "./">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script src = "TufFixIt.js" type = "module"></script>
+
+
+<!-- This part create blue line layout (a box)-->
+<body style="border: 1px solid grey; background-color: whitesmoke; padding:20px; width: 500px;">
+
+    <h1>If there is a fire, please call 911 to contact the fire department. If your safety is otherwise at risk being near a hazard, please get to safety before reporting it.</h1>
+    <form id = 'pageForm'>  
+        <fieldset> 
+            <legend> Is this issue urgent </legend>
+    
+        <label for = "Yes" > Yes </label>
+        <input type="radio" id = "EmergencyYes" name="emergency" >
+        <label for = "No" > No </label>
+        <input type="radio" id = "EmergencyNo" name="emergency" checked><br> 
+
+        </fieldset> 
+        <br>
+
+         <fieldset> 
+
+            <legend> CATEGORY </legend>
+
+    
+    <input type="checkbox" id = "ELECTRICAL" name="ELECTRICAL" value = "false" >
+    <label for = "ELECTRICAL" > ELECTRICAL </label>
+    <br> 
+    <input type="checkbox" id = "STRUCTURAL" name="STRUCTURAL" value = "false" >
+    <label for = "STRUCTURAL" > STRUCTURAL </label>
+    <br>         
+    <input type="checkbox" id = "HVAC" name="HVAC" value = "false" >
+    <label for = "HVAC" > HVAC </label>
+    <br> 
+    <input type="checkbox" id = "HAZARDOUS/WASTE" name="HAZARDOUS/WASTE" value = "false" >
+    <label for = "HAZARDOUS/WASTE" > HAZARDOUS MATERIAL/WASTE </label>
+    <br> 
+    <input type="checkbox" id = "SAFETY" name="SAFETY" value = "false">
+    <label for = "SAFETY" > SAFETY </label>
+    <br> 
+    <input type="checkbox" id = "PLUMBING/SEWER" name="PLUMBING/SEWER" value = "false">
+    <label for = "PLUMBING/SEWER" > PLUMBING/SEWER </label>
+    <br> 
+    <input type="checkbox" id = "WATER/IRRIGATION" name="WATER/IRRIGATION " value = "false">
+    <label for = "WATER/IRRIGATION" > WATER/IRRIGATION </label>
+    <br> 
+    <input type="checkbox" id = "ROAD" name="ROAD" value = "false">
+    <label for = "ROAD" > ROAD </label>
+    <br> 
+    <input type="checkbox" id = "SECURITY/FENCE" name=" SECURITY/FENCE" value = "false">
+    <label for = "SECURITY/FENCE" > SECURITY/FENCE </label>
+    <br> 
+    <input type="checkbox" id = "CLASSROOM EQUIPMENT" name="CLASSROOM EQUIPMENT" value = "false">
+    <label for = "CLASSROOM EQUIPMENT" > CLASSROOM EQUIPMENT</label>
+    <br> 
+    <input type="checkbox" id = "OTHER" name="OTHER" value = "false">
+    <label for = "OTHER" > *OTHER (Enter Description) </label>
+
+    <br> 
+
+         </fieldset>
+         <fieldset> 
+
+             <legend> LOCATION </legend>
+
+        <label for = "Location" > SELECT LOCATION:  </label>
+        <select name = "Location" id = "Location" > 
+
+            <option value = "Arboretum" > Arboretum </option>
+            <option value = "Book Store/Titan Shops" > Book Store/Titan Shops </option>
+            <option value = "Becker Amphitheater" > Becker Amphitheater </option>
+            <option value = "Greenhouse Complex" > Greenhouse Complex </option>
+            <option value = "Children's Center" > Children's Center </option>
+            <option value = "Carl's Jr" > Carl's Jr </option>
+            <option value = "College Park" > College Park </option>
+            <option value = "Clayes Performing Arts Center" > Clayes Performing Arts Center </option>
+            <option value = "Corporation Yard" > Corporation Yard </option>
+            <option value = "Computer Science" > Computer Science </option>
+            <option value = "Commons" > Commons </option>
+            <option value = "Dan Black Hall" > Dan Black Hall </option>
+            <option value = "Engineering" > Engineering </option>
+            <option value = "Education-Classroom" > Education-Classroom </option>
+            <option value = "Engineering & Computer Science" > Engineering & Computer Science </option>
+            <option value = "Eastside Parking Structure" > Eastside Parking Structure </option>
+            <option value = "Golleher Alumni House" > Golleher Alumni House </option>
+            <option value = "Goodwin Field" > Goodwin Field </option>
+            <option value = "Humanities-Social Sciences" > Humanities-Social Sciences </option>
+            <option value = "Kinesiology & Health Science" > Kinesiology & Health Science </option>
+            <option value = "Langsdorf Hall" > Langsdorf Hall </option>
+            <option value = "McCarthy Hall" > McCarthy Hall </option>
+            <option value = "Parking & Transportation Office" > Parking & Transportation Office </option>
+            <option value = "Residence Halls" > Residence Halls </option>
+            <option value = "Housing Office" > Housing Office </option>
+            <option value = "Pollak Library" > Pollak Library </option>
+            <option value = "Corporation Yard - Receiving" > Corporation Yard - Receiving </option>
+            <option value = "Ruby Gerontology Center" > Ruby Gerontology Center </option>
+            <option value = "Student Health & Counseling Center" > Student Health & Counseling Center </option>
+            <option value = "Mihaylo Hall" > Mihaylo Hall </option>
+            <option value = "Student Housing" > Student Housing </option>
+            <option value = "Student Rec Center" > Student Rec Center </option>
+            <option value = "Titan Gymnasium" > Titan Gymnasium </option>
+            <option value = "Titan House" > Titan House </option>
+            <option value = "Titan Stadium" > Titan Stadium </option>
+            <option value = "Titan Student Union" > Titan Student Union </option>
+            <option value = "University Hall" > University Hall </option>
+            <option value = "University Police" > University Police </option>
+            <option value = "Visual Arts" > Visual Arts </option>
+            <option value = "Nutwood Parking Structure" > Nutwood Parking Structure </option>
+            <option value = "State College Parking Structure" > State College Parking Structure </option>
+            <option value = "Visitor Information Center" > Visitor Information Center </option>
+            <option value = "A - parking lot" > A - parking lot </option>
+            <option value = "A-South - parking lot" > A-South - parking lot </option>
+            <option value = "G - parking lot" > G - parking lot </option>
+            <option value = "D - parking lot" > D - parking lot </option>
+            <option value = "E - parking lot" > E - parking lot </option>
+            <option value = "I - parking lot" > I - parking lot </option>
+            <option value = "F - parking lot" > F - parking lot </option>
+            <option value = "C - parking lot" > C - parking lot </option>
+            <option value = "S - parking lot" > S - parking lot </option>
+            <option value = "CPFS - parking lot" > CPFS - parking lot </option>
+            <option value = "Quad" > Quad </option>
+            <option value = "Yorba Linda Blvd" > Yorba Linda Blvd</option>
+            <option value = "State College Blvd" > State College Blvd</option>
+            <option value = "Nutwood Ave" > Nutwood Ave </option>
+            <option value = "Coportation Dr" > Coportation Dr </option>
+            <option value = "Gymnasium Dr" > Gymnasium Dr </option>
+            <option value = "Arts Dr" > Arts Dr </option>
+            <option value = "Titan Ave" > Titan Ave </option>
+            <option value = "Commonwealth St" > Commonwealth St </option>
+            <option value = "Langsdorf St" > Langsdorf St </option>
+            <option value = "Folino Dr" > Folino Dr </option>
+            <option value = "Other" > Other (Enter Description) </option>
+
+        </select>
+        <br>
+        <br>
+
+         </fieldset>
+
+    <fieldset> 
+        <legend> DESCRIPTION BOX </legend> 
+
+        <textarea id = "Comment" name= "Comment" rows="5" cols="50" style="text-align:left;" placeholder = "Please describe the issue here if you feel like it would help"></textarea>
+         
+    <br> 
+    <br> 
+    </fieldset>  
+
+    <fieldset>
+           <!-- Submit Button-->
+           <input type="submit" value="SUBMIT"> 
+           <input type="reset" value="RESET"> 
+
+     </fieldset>
+
+</form>
+
+</body>
+
+
+</html>

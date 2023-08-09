@@ -1,0 +1,19 @@
+{
+  "name": "webform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TufFixIt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/ws": "^8.5.4"
+  }
+}

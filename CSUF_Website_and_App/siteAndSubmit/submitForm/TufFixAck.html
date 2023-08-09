@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <title> TufFixIt Submission Ack </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href = "./">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Ticket succesfully recieved</h1>
+<input type = "button" value = "Submit Another?" onclick = "redirect()">
+<input type = "button" value = "Logout" onclick = "logout()">
+
+<script>
+    function redirect(){
+        window.location.href = "./TufFixIt.html";
+    }
+    function logout(){
+        localStorage.setItem("tufCwid", null);
+        window.location.href = "./TufFixLogon.html"
+    }
+</script>

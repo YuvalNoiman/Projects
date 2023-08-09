@@ -1,0 +1,21 @@
+select * from maintenance.PersonalInfo;
+select * from maintenance.RequestInfo;
+
+#orders the personal info by its CWID
+select * from maintenance.PersonalInfo order by CWID;
+
+#searches for the people whose cwids are above 555555555
+select * from maintenance.PersonalInfo where CWID>555555555;
+
+#searches for the places where category is FIRE
+select * from maintenance.RequestInfo where Category='FIRE';
+
+#Gets the first and last name of person and description of incident
+SELECT PersonalInfo.FirstName, PersonalInfo.LastName, RequestInfo.Descript
+FROM PersonalInfo
+INNER JOIN RequestInfo ON PersonalInfo.CWID=RequestInfo.ID;
+
+#Gets all information
+SELECT PersonalInfo.Personalno, PersonalInfo.FirstName, PersonalInfo.LastName, PersonalInfo.Pass, PersonalInfo.CWID, PersonalInfo.PhoneNumber, PersonalInfo.Email, RequestInfo.Location, RequestInfo.Descript, RequestInfo.Category, RequestInfo.Emergency
+FROM PersonalInfo
+Inner JOIN RequestInfo ON PersonalInfo.CWID=RequestInfo.ID;
